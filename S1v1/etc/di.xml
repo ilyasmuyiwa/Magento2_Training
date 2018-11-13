@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Vault\Model\PaymentTokenManagement" type="Training\S1v1\Model\PaymentTokenManagement" />
+    
+    <type name="Magento\Dhl\Model\Carrier">
+        <plugin name="Training_S1v1_Plugin_Carrier" type="Training\S1v1\Plugin\Carrier" />
+    </type>
+
+    <type name="Training\S1v1\Framework\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">custom</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">Training\S1v1\Framework\Logger\Handler\FileSystem</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="newtest" xsi:type="object">Training\S1v1\Test\Console</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
