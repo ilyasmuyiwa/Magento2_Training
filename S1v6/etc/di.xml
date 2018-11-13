@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\App\Action\Action">
+        <plugin name="trainings1v6before7" type="Training\S1v6\Plugin\Magento\Framework\App\Action\Action\Before7" sortOrder="7" />
+        <plugin name="trainings1v6before11" type="Training\S1v6\Plugin\Magento\Framework\App\Action\Action\Before11" sortOrder="11" />
+        <plugin name="trainings1v6around9" type="Training\S1v6\Plugin\Magento\Framework\App\Action\Action\Around9" sortOrder="9" />
+        <plugin name="trainings1v6around12" type="Training\S1v6\Plugin\Magento\Framework\App\Action\Action\Around12" sortOrder="12" />
+        <plugin name="trainings1v6around10" type="Training\S1v6\Plugin\Magento\Framework\App\Action\Action\After10" sortOrder="10" />
+        <plugin name="trainings1v6around13" type="Training\S1v6\Plugin\Magento\Framework\App\Action\Action\After13" sortOrder="13" />
+    </type>
+
+    <type name="Training\S1v6\Controller\Index\Index">
+        <plugin name="trainings1v6before1" type="Training\S1v6\Plugin\Controller\Index\Index\Before1" sortOrder="1" />
+        <plugin name="trainings1v6around2" type="Training\S1v6\Plugin\Controller\Index\Index\Around2" sortOrder="2" />
+        <plugin name="trainings1v6after3" type="Training\S1v6\Plugin\Controller\Index\Index\After3" sortOrder="3" />
+        <plugin name="trainings1v6before4" type="Training\S1v6\Plugin\Controller\Index\Index\Before4" sortOrder="4" />
+        <plugin name="trainings1v6around5" type="Training\S1v6\Plugin\Controller\Index\Index\Around5" sortOrder="5" />
+        <plugin name="trainings1v6after6" type="Training\S1v6\Plugin\Controller\Index\Index\After6" sortOrder="6" />
+    </type>
+
+    <!-- Before Plugin for Around 2 -->
+    <type name="Training\S1v6\Plugin\Controller\Index\Index\Around2">
+        <plugin name="Around2Before" type="Training\S1v6\Plugin\Controller\Index\Index\Around2\BeforeAround2" />
+    </type>
+</config>
