@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:training:module:Training_S1v2:/etc/sample.xsd">
+    <row id="row1">
+        <column id="col1" sort="10" attr1="val1">
+            <label>Col 1</label>
+        </column>
+    </row>
+    <row id="row2">
+        <column id="col1" sort="10" attr1="val1">
+            <label>Col 1</label>
+        </column>
+        <column id="col2" sort="20" disabled="true" attr1="val2" >
+            <label>Col 2</label>
+        </column>
+        <column id="col3" sort="15" attr1="val1">
+            <label>Col 3</label>
+        </column>
+    </row>
+    <myNode>1</myNode>
+</table>
