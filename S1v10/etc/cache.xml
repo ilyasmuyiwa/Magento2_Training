@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+    <type name="cblock" translate="label, description" instance="Training\S1v10\CacheableBlock\App\Cache\Type\Cblock">
+       <label>CBLOCK</label>
+        <description>Custom Cache Type Configuring Example</description>
+    </type>
+</config>
