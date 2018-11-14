@@ -12,7 +12,6 @@ namespace Training\S1v10\Controller\Index;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
-use Training\S1v10\CacheableBlock\App\Cache\Type\Cblock;
 
 class Index extends Action
 {

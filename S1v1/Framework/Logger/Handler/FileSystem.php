@@ -24,7 +24,7 @@ class FileSystem extends Base
     {
        $modulePath = $moduleReader->getModuleDir('', $this->moduleName);
        $filePath = $modulePath .str_replace('/', DIRECTORY_SEPARATOR, $filePath);
-       parent::__construct($filesystem, $filePath, $fileName);
+       parent::__construct($filesystem, $filePath);
     }
 
 }
