@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="CustomLog" type="Magento\Framework\Logger\Handler\Base">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+            <argument name="fileName" xsi:type="string">/var/log/mymodule.log</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="actionDataLog" type="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="action_data_log" xsi:type="object">Training\S2v4\Logger\Handler\Base\Log</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    
+    <type name="Training\S2v4\Observer\LogActionData">
+        <arguments>
+            <argument name="logger" xsi:type="object">actionDataLog</argument>
+        </arguments>
+    </type>
+
+</config>
