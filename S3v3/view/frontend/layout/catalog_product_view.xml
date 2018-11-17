@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="content">
+            <container name="custom-header-template" htmlTag="div" htmlClass="custom-css-class" htmlId="custom-header-template">
+                <block class="Training\S3v3\Block\Page" name="view_model_block_page" template="Training_S3v3::header_template.phtml" >
+                    <arguments>
+                        <argument name="viewModel" xsi:type="object">Training\S3v3\ViewModel\Storefront\Header</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceBlock >
+    </body>
+</page>
