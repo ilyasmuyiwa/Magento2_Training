@@ -1,0 +1,17 @@
+<div id="membership" class="membership" style="display: none">
+    <label class="label" for="membership"><span><?= $block->escapeHtml(__('Membership')) ?></span></label>
+
+    <select data-mage-init='{"membership":{}}' id="membership" name="membership"
+    title="<?= /** @var \Training\S3v4\Block\CustomerData $block */
+    $block->escapeHtml(__('Membership')) ?>" class="validate-select membership">
+        <?php foreach ($block->getMembershipOptions() as $option): ?>
+         <option value="<?=$block->escapeHtml($option['value']) ?>">
+              <?=$block->escapeHtml($option['label']->getText()) ?></option>
+     <?php endforeach; ?>
+    </select>
+
+</div>
+
+<script type="text/x-magento-init">
+    {"*": {"membership":"{}"}}
+</script>
