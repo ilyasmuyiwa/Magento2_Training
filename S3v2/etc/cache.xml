@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+    <type name="banner" translate="Banner" instance="Training\S3v2\App\Cache\Type\Banner">
+        <label>Banner</label>
+        <description>Banner FPC</description>
+    </type>
+</config>
