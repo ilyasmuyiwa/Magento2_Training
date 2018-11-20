@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Training\S4v2\Api\VirtualRepositoryInterface" type="Training\S4v2\Model\VirtualRepository" />
+    <preference for="Training\S4v2\Api\Data\VirtualSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Training\S4v1\Api\Data\VendorInterface" type="Training\S4v1\Model\Vendor" />
+    <preference for="Training\S4v1\Api\VendorRepositoryInterface" type="Training\S4v1\Model\VendorRepository" />
+    <preference for="Training\S4v1\Api\Data\VendorSearchResultsInterface" type="\Training\S4v1\Model\VendorSearchResult" />
+    <preference for="Training\S4v1\Api\Data\VendorResultInterface" type="Training\S4v1\Model\VendorResultRepository" />
+    <preference for="Training\S4v1\Api\Data\TypeInterface" type="Training\S4v1\Model\Type" />
+    <preference for="Training\S4v1\Api\TypeRepositoryInterface" type="Training\S4v1\Model\TypeRepository" />
+    <preference for="Training\S4v1\Api\Data\TypeSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+
+    <type name="Training\S4v1\Model\VendorRepository">
+        <plugin name="test_extension_attributes" type="Training\S4v1\Plugin\CustomMessage" />
+    </type>
+</config>
