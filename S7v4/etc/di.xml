@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\Pricing\Price\Collection">
+        <plugin name="log_base_price" type="Training\S7v4\Plugin\Base" sortOrder="1" />
+    </type>
+
+    <type name="Magento\Framework\Pricing\Amount\AmountFactory">
+        <plugin name="log_price_adjustments" type="Training\S7v4\Plugin\Adjustment" sortOrder="1" />
+    </type>
+</config>
