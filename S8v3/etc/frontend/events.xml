@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_quote_collect_totals_before">
+        <observer name="processGift" instance="Training\S8v3\Observer\Gift" />
+    </event>
+
+</config>
